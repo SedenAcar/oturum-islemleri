@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoş Geldiniz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .welcome-message {
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .logout-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-message">
+        TEBRİKLER GİRİŞ YAPTINIZ
+    </div>
+    <button class="logout-button" onclick="logout()">Çıkış Yap</button>
+
+    <script>
+        function logout() {
+            // Burada gerekirse sunucuya çıkış bildirimi gönderilebilir
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
